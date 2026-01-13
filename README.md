@@ -104,19 +104,19 @@ Then cd into folder `simple-backend` and run the command `uvicorn requests:app -
 
 To serve the frontend cd into folder `simple-frontend`, run command `npm install` -> this will install all dependencies and run `npm run dev` to serve the frontend on port number 5173 and you can access it over here in [http://localhost:5173/](http://localhost:5173/).
 
-----
+--
 2. Before you hit any API via the frontend, make sure you have the Kafka-local up and ready.
 cd into folder Kafka-local -> and run the command `docker compose up -d` which will bring up a local Kafka instance.
 
 Now you can hit any API via the frontend but we cannot see any analytics as such till now.
 
----
+--
 3. Now we need to bring up the Service which does the validation, bot detection and writing to the timeseries db and the Redis cache.
 
 so you can cd into `Kafka_Reader` and just run the command python `python3 analytics_ingestion.py` -> This will bring up the above service.
 
 
----
+--
 4. Now before we hit any API, we need to make sure redis is running and the tables present in the timeseries optimized table is present.
 So we can get Redis up and running by executing the command:
 ```
@@ -133,3 +133,7 @@ To get the Postgres instance up, we follow the steps mentioned in the Readme.md 
 a. Bring up the backed by doing cd Redis-Db-Reader and then bring up the db by running the command `uvicorn data_reader:app --reload --port 8000` which will bring up the backend on port 4000.
 b. Then bring up the frontend by cd Dashboard-app, running `npm install` which will install the dependencies, then go to folder ViewStats by doing `cd ViewStats` and run `npm install` to install all the dependencies and then `npm run dev` to brin up the frontend on port 5174: [http://localhost:5174/](http://localhost:5174/).
 
+
+
+**Sample Video**
+____________________________________________________________________________________________________________________________________
