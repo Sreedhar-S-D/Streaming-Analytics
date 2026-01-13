@@ -128,7 +128,7 @@ docker run -d \
 
 To get the Postgres instance up, we follow the steps mentioned in the Readme.md file of Postgres-init. This will bring up the normal db to detect bots and also the time series optimized tables.
 
----
+--
 5. Now to be able to read the data from redis and to be able to see in the UI, we can do the following:
 a. Bring up the backed by doing cd Redis-Db-Reader and then bring up the db by running the command `uvicorn data_reader:app --reload --port 8000` which will bring up the backend on port 4000.
 b. Then bring up the frontend by cd Dashboard-app, running `npm install` which will install the dependencies, then go to folder ViewStats by doing `cd ViewStats` and run `npm install` to install all the dependencies and then `npm run dev` to brin up the frontend on port 5174: [http://localhost:5174/](http://localhost:5174/).
@@ -137,3 +137,10 @@ b. Then bring up the frontend by cd Dashboard-app, running `npm install` which w
 
 **Sample Video**
 ____________________________________________________________________________________________________________________________________
+
+
+<p align="center" width="100%">
+  <video src="https://github.com/Sreedhar-S-D/Streaming-Analytics/blob/main/Sample_flow.mov" controls width="80%">
+    Sorry, your browser doesn't support HTML 5 video.
+  </video>
+</p>
