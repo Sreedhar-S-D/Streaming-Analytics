@@ -26,7 +26,21 @@ CREATE TABLE events (
 SELECT create_hypertable('events', 'timestamp');
 
 
--- To create table which enable to check for malicious users, Following steps are followed
+-- Above steps will help to bring up a table which optimized for timeseries data
 
+-- Then we would also need to create a table which would help to check maliciious users.
+-- To create table which enable to check for malicious users, Following steps are followed
+CREATE TABLE user_event_rate (
+    user_id TEXT,
+    time_bucket TIMESTAMP,
+    event_count INT,
+    PRIMARY KEY (user_id, time_bucket)
+);
+
+CREATE TABLE bot_users (
+    user_id TEXT PRIMARY KEY,
+    detected_at TIMESTAMP DEFAULT NOW(),
+    reason TEXT
+);
 
 

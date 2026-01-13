@@ -4,6 +4,7 @@ from datetime import datetime
 from collections import defaultdict
 import re
 
+
 BOT_THRESHOLD = 10
 USER_ID_RE = re.compile(r"^usr_\d+$")
 SESSION_ID_RE = re.compile(r"^sess_\d+$")
