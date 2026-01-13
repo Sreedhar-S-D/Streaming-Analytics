@@ -139,7 +139,7 @@ b. Then bring up the frontend by cd Dashboard-app, running `npm install` which w
 ____________________________________________________________________________________________________________________________________
 
 <p align="center" width="100%">
-  <video src="https://github.com/Sreedhar-S-D/Streaming-Analytics/blob/main/Sample_flow.mov" controls width="80%">
+  <video src="https://github.com/user-attachments/assets/4e3360e5-8c74-4709-8bc7-685e4c6b7f9e" controls width="80%">
     Sorry, your browser doesn't support HTML 5 video.
   </video>
 </p>
