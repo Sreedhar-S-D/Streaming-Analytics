@@ -1,3 +1,29 @@
+**INTRODUCTION**
+
+This is a basic analytics service service that processes user events and provides basic real-time insights for three basic events:
+▪ Active users count
+▪ Top 5 pages
+▪ Number of active sessions for the same user
+
+
+User Events are sent by a mock data service and a mock payload can be found over here:
+```
+{
+ "timestamp": "2024-03-15T14:30:00Z",
+ "user_id": "usr_789",
+ "event_type": "page_view",
+ "page_url": "/products/electronics",
+ "session_id": "sess_456"
+}
+```
+
+
+**ARCHITECTURE**
+
+![Architecture Diagram](./architecture.png)
+
+
+
 Run the below step to create a POSTGRES DB to create the time series optimized table 
 
 STEP 1: bring up a postgres instance in docker
